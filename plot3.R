@@ -17,7 +17,7 @@ plot_3 <- function() {
         plot(dataSet$DateTime,dataSet$Sub_metering_1, type="l", xlab="", ylab="Energy sub metering")
         lines(dataSet$DateTime,dataSet$Sub_metering_2,col="red")
         lines(dataSet$DateTime,dataSet$Sub_metering_3,col="blue")
-        legend("topright", col=c("black","red","blue"), c("Sub_metering_1  ","Sub_metering_2  ", "Sub_metering_3  "),lty=c(1,1), lwd=c(1,1))
+        legend("topright", col=c("black","red","blue"), c("Sub_metering_1  ","Sub_metering_2  ", "Sub_metering_3  "),lty=c(1,1), lwd=c(1,1), cex=.6,pt.cex=3, inset=c(0.33,0), box.col = 0)
         dev.copy(png, file="plot3.png", width=480, height=480)
         dev.off()
 }
